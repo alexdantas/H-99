@@ -1,0 +1,19 @@
+-- Problem 1
+-- Find the last element of a list.
+--
+-- Example:
+-- Prelude> myLast [1,2,3,4]
+-- 4
+-- Prelude> myLast ['x','y','z']
+-- 'z'
+
+-- This is just like a 'switch/case' statement on procedural languages.
+-- If the argument is a list with one element, return it.
+-- If the argument is a list with one argument followed by a non-empty
+-- list, apply the function to the sub-list.
+--
+-- It will keep going until the last element
+
+myLast (x:[]) = x
+myLast (x:xs) = myLast xs
+
