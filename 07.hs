@@ -6,7 +6,7 @@
 --
 -- * (my-flatten '(a (b (c d) e)))
 -- (A B C D E)
-
+--
 -- Example in Haskell:
 --
 -- We have to define a new data type, because lists in Haskell are homogeneous.
